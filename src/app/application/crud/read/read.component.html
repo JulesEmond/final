@@ -3,7 +3,7 @@
 
 
    <div>
-       <a [routerLink]="['/crud/create']" class="btn btn-success btn-lg my-4">Create</a>
+       <a [routerLink]="['/formulaire']" class="btn btn-success btn-lg my-4">Create</a>
    </div> 
 <table class="table">
     <thead class="thead-dark">
@@ -26,7 +26,7 @@
             <td>{{item.subscriptionType}}</td>
             <td>{{item.notes}}</td>
             <td>
-                <a href="" class="btn btn-info mr-2">Afficher</a>
+                <a [routerLink]="[ '/crud/read/', item.id]" class="btn btn-info mr-2">Afficher</a>
                 <a [routerLink]="[ '/crud/update/', item.id]" class="btn btn-primary mr-2">Update</a>
                 <button type="button" (click)="delete(item.id)" class="btn btn-danger mr-2">Delete</button>
                 <button type="button" (click)="delete2(item.id, i)" class="btn btn-danger">Delete2</button>

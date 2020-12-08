@@ -20,6 +20,7 @@ import { Error404Component } from './application/error404/error404.component';
 import { TutorielsComponent } from './application/tutoriels/tutoriels.component';
 import { FormulaireComponent } from './application/formulaire/formulaire.component';
 import { ReactiveComponent } from './theorie/reactive/reactive.component';
+import { ReadOneComponent } from './application/crud/read-one/read-one.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { ReactiveComponent } from './theorie/reactive/reactive.component';
     TutorielsComponent,
     FormulaireComponent,
     ReactiveComponent,
+    ReadOneComponent,
   ],
   imports: [
     BrowserModule,

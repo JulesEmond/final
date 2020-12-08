@@ -9,17 +9,18 @@ import { TutorielsComponent } from './application/tutoriels/tutoriels.component'
 import { FormulaireComponent } from './application/formulaire/formulaire.component';
 import { CreateComponent } from './application/crud/create/create.component';
 import { UpdateComponent } from './application/crud/update/update.component';
-
+import { ReadOneComponent } from './application/crud/read-one/read-one.component';
 const routes: Routes = [
   {
     path: 'tutoriel',
     children: [{ path: ':id', component: TutorielsComponent }],
   },
   { path: 'home', component: HomeComponent },
-  { path: 'formulaire', component: CreateComponent },
+  { path: 'formulaire', component: FormulaireComponent },
   { path: 'crud', component: ReadComponent },
-  { path: 'crud/create', component: CreateComponent },
+  //{ path: 'crud/create', component: CreateComponent },
   { path: 'crud/update/:id', component: UpdateComponent },
+  { path: 'crud/read/:id', component: ReadOneComponent },
   { path: 'fun', component: FunComponent },
   { path: 'contact', component: ContactComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
